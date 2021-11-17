@@ -1,10 +1,15 @@
 import actionTypes from '../actions/actionTypes';
 
+const initialState = [{
+  geometry: { location: { lat: 41.388487, lng: 2.1562865 } },
+  name: 'Barcelona',
+  formatted_address: 'Barcelona, España',
+}];
 // eslint-disable-next-line default-param-last
-export default function locationsArrayReducer(locations = [], action) {
+export default function locationsArrayReducer(locations = initialState, action) {
   let newLocations = locations;
   if (action.type === actionTypes.SAVE_LOCATION) {
-    newLocations = action.locations;
+    newLocations = [...locations, action.location];
   }
   return newLocations;
 }
