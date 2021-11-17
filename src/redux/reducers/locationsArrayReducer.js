@@ -5,7 +5,7 @@ const initialState = [{
   name: 'Barcelona',
   formatted_address: 'Barcelona, España',
 }];
-// eslint-disable-next-line default-param-last
+
 export default function locationsArrayReducer(locations = initialState, action) {
   let newLocations = locations;
   if (action.type === actionTypes.SAVE_LOCATION) {

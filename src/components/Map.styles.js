@@ -1,4 +1,4 @@
-export default {
+const MapStyles = {
   container: {
     width: '80vw',
     height: '80vh',
@@ -29,3 +29,5 @@ export default {
     height: '5vh',
   },
 };
+
+export default MapStyles;

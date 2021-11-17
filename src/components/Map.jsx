@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 import React, {
   useState,
 } from 'react';
@@ -66,7 +65,6 @@ const Map = function () {
       />
     </Autocomplete>
   </GoogleMap>
-
   );
 };
 
